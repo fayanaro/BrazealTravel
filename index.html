@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+	<!--
+	M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page
+		Head, Body, header, main, and footer used on page
+	-->
+	<head>
+		<!--
+		Course: CIS155
+			Project v2
+		Author: Blaize Brazeal
+		Date:   7 August 2019
+	   
+	   Filename: index.html
+	   -->
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=.86, maximum-scale=1"/>
+		<title>Brazeal Travel Agency</title>
+		<link href="styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html" class="sitenav">Home</a></li>
+					<li><a href="disneyland.html" class="subnav"><img src="disneyland_logo.svg" alt="disneyland"/></a></li>
+					<li><a href="disneyworld.html" class="subnav"><img src="disneyworld_logo.svg" alt="disneyworld"/></a></li>
+					<li><a href="disneycruise.html" class="subnav"><img src="disneycruise_logo.svg" alt="disneycruise"/></a></li>
+					<li><a href="about.html" class="subnav">About Assignment</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="contact" class="home">
+				<h1>Contact Information</h1>
+				<dl>
+					<dt>Name</dt>
+					<dd>Travel Agency</dd>
+					<dt>Phone</dt>
+					<dd><a href="tel:+13605551234">432.555.4971</a></dd>
+					<dt>Email</dt>
+					<dd><a href="mailto:brazealtravel@email.com">brazealtravel@email.com</a></dd>
+				</dl>
+			</section>
+			<section id="slide" class="home">
+				<!--
+				M4LO1 Demonstrate the use of figure boxes
+					Figure boxes around the images in the slides
+				-->
+				<figure>
+					<img src="dis_pic1.jpg" alt="castle" usemap="#disney" />
+					<figcaption>Sleeping Beauty Castle at Disneyland</figcaption>
+				</figure>
+				<figure>
+					<img src="dis_pic2.jpg" alt="starwars"/>
+					<figcaption>Millenium Falcon in Galaxy's Edge at Disneyland</figcaption>
+				</figure>
+				<!--
+				M4LO7 Demonstrate the use of image maps, including determining x and y values 
+					Links to other pages in the picture. I determined the position in photoshop.
+				-->
+				<map name="disney">
+					<area shape="circle" coords="57,25,10" href="about.html" alt="about" />
+					<area shape="rect" coords="200,50,290,150" href="disneyland.html" alt="disneyland" />
+				</map>
+			</section>
+			<section id="form" class="home">
+				<!-- Not supported yet due to course restrictions. Will be implemented later -->
+			</section>
+			<section id="deals" class="home">
+				<h1 style="color: blue;">Current Deals</h1>
+				<img src="deal1.jpg" alt="free dining"/>
+			</section>
+		</main>
+		<footer>
+			<section id="footdisc" class="footer">
+				<h1>Site Information</h1>
+				<p>Disney Parks and Disney Cruise Line are owned by The Walt Disney Company.
+				For additional information about any items viewed on this site navigate to one of the official Disney sites below.</p>
+				<nav>
+					<ul> 
+						<li><a href=https://disneyland.disney.go.com>Disneyland</a></li>
+						<li><a href=https://disneyworld.disney.go.com>Disney World</a></li>
+						<li><a href=https://disneycruise.disney.go.com/>Disney Cruise Line</a></li>
+					</ul>
+				</nav>
+			</section>
+			<section id="footnav" class="footer">
+				<h1>Site Navigation</h1>
+				<nav>
+					<ol>
+						<li><a href="index.html" class="navigation">Home</a>
+							<ol class="submenu">
+								<li><a href="index.html#contact">Contact Information</a></li>
+								<li><a href="index.html#slide">Park Pictures</a></li>
+								<li><a href="index.html#deals">Deal Information</a></li>
+							</ol></li>
+						<li><a href="disneyland.html" class="navigation">Disneyland</a></li>
+						<li><a href="disneyworld.html"  class="navigation">Disney World</a></li>
+						<li><a href="disneycruise.html" class="navigation">Disney Cruise Line</a></li>
+						<li><a href="about.html" class="navigation">About Assignment</a>
+							<ol class="submenu">
+								<li><a href="about.html#title">Title</a></li>
+								<li><a href="about.html#v1">V1</a></li>
+								<li><a href="about.html#v2">V2</a></li>
+							</ol></li>
+					</ol>
+				</nav>
+				<a href="#top">Return to top</a>
+			</section>
+		</footer>
+	</body>
+</html>

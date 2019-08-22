@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!--
+		Course: CIS155
+			Project v2
+		Author: Blaize Brazeal
+		Date:   7 August 2019
+	   
+	   Filename: about.html
+	   -->
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width initial-scale=1"/>
+		<title>BTA About</title>
+		<link href="styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="disneyland.html"><img src="disneyland_logo.svg" alt="disneyland"/></a></li>
+					<li><a href="disneyworld.html"><img src="disneyworld_logo.svg" alt="disneyworld"/></a></li>
+					<li><a href="disneycruise.html"><img src="disneycruise_logo.svg" alt="disneycruise"/></a></li>
+					<li><a href="about.html">About Assignment</a></li>
+					
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="title" class="about">
+				<h1>CIS 155 Project</h1>
+				<dl>
+					<dt>Student</dt>
+					<dd>Blaize Brazeal</dd>
+					<dt>Assignment</dt>
+					<dd>CIS 155 Project V1</dd>
+					<dt>Date</dt>
+					<dd>17 July 2019</dd>
+					<dt>Due Date</dt>
+					<dd>20 July 2019 - 23 July 2109</dd>
+				</dl>
+			</section>
+			<section id="v1" class="about">
+				<h1>V1 Summary of Changes</h1>
+				<p>Initial build includes addition of pages index.html, about.html, disneyland.html, disneyworld.html, and disneycruise.html and the style sheet styles.css. The main focus for this assignment will be index.html,
+					about.html, and styles.css. The other three, disneyland.html, disneyworld.html, and disneycruise.html, will	be focused on in later versions.</p>
+				<p>In each page I have included a header and footer with navigation in each. I have added coloring and fonts as well as floats and other things in CSS for visual appeal.</p>
+				<p>All images and fonts used are under creative commons or permission to use them personally was given by the creator.
+				</p>
+				<ul>
+					<li>parks.jpg is taken from a private inaccessable travel site</li>
+					<li>disneycruise_logo.svg was taken from <a href="https://en.m.wikipedia.org/wiki/File:Disney_Cruise_Line_logo.svg">Wikipedia</a></li>
+					<li>disneyland_logo.svg was taken from <a href="https://commons.wikimedia.org/wiki/File:Disneyland_Park_Logo.svg">Wikimedia</a></li>
+					<li>disneyworld_logo.svg was taken from <a href="https://commons.wikimedia.org/wiki/File:Walt_Disney_World_Logo_2018.svg">Wikimedia</a></li>
+					<li>dis_pic1.jpg is a personal photo</li>
+					<li>dis_pic2.jpg is a personal photo</li>
+					<li>deal1.jpg is taken from a private inaccessable travel site</li>
+					<li>ear_bullet.svg was taken from <a href="https://commons.wikimedia.org/wiki/File:Mickey_Mouse_head_and_ears.svg">Wikimedia</a></li>
+					<li>disney.ttf was taken from <a href="https://www.1001fonts.com/waltograph-font.html">1001 Fonts</a></li>
+				</ul>
+			</section>
+			<section id="v2" class="about">
+				<h1>V2 Summary of Changes</h1>
+				<p>Added a lot of flow control and alignment properties, as well as changed the header picture to a background in order for it to fit better with the text. 
+				I added content into the dineycruise.html page in the form of a table listing when and where cruises were available. A lot of the stylistic changes were to fulfill requirements for the class or to get the mobile interface working.
+				</p>
+				<p>The biggest issue I had was the @media section. I could not get the screen to format correctly on the phone. I'm assuming because I did so much finagling with the formatting for desktop it just didn't work out.
+				I want to get it to work so any suggestions are welcome.
+				</p>
+			</section>
+		</main>
+		<footer>
+			<section id="footdisc" class="footer">
+				<h1>Site Information</h1>
+				<p>Disney Parks and Disney Cruise Line are owned by The Walt Disney Company.
+				For additional information about any items viewed on this site navigate to one of the official Disney sites below.</p>
+				<nav>
+					<ul> 
+						<li><a href=https://disneyland.disney.go.com>Disneyland</a></li>
+						<li><a href=https://disneyworld.disney.go.com>Disney World</a></li>
+						<li><a href=https://disneycruise.disney.go.com/>Disney Cruise Line</a></li>
+					</ul>
+				</nav>
+			</section>
+			<section id="footnav" class="footer">
+				<h1>Site Navigation</h1>
+				<nav>
+					<ol>
+						<li><a href="index.html" class="navigation">Home</a>
+							<ol class="submenu">
+								<li><a href="index.html#contact">Contact Information</a></li>
+								<li><a href="index.html#slide">Park Pictures</a></li>
+								<li><a href="index.html#deals">Deal Information</a></li>
+							</ol></li>
+						<li><a href="disneyland.html" class="navigation">Disneyland</a></li>
+						<li><a href="disneyworld.html"  class="navigation">Disney World</a></li>
+						<li><a href="disneycruise.html" class="navigation">Disney Cruise Line</a></li>
+						<li><a href="about.html" class="navigation">About Assignment</a>
+							<ol class="submenu">
+								<li><a href="about.html#title">Title</a></li>
+								<li><a href="about.html#v1">V1</a></li>
+								<li><a href="about.html#v2">V2</a></li>
+							</ol></li>
+					</ol>
+				</nav>
+				<a href="#top">Return to top</a>
+			</section>
+		</footer>
+	</body>
+</html>
