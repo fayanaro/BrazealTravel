@@ -1,15 +1,11 @@
 <!doctype html>
 <html lang="en">
-	<!--
-	M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page
-		Head, Body, header, main, and footer used on page
-	-->
 	<head>
 		<!--
 		Course: CIS155
-			Project v2
+			Project v3
 		Author: Blaize Brazeal
-		Date:   7 August 2019
+		Date:   20 August 2019
 	   
 	   Filename: index.html
 	   -->
@@ -43,29 +39,64 @@
 				</dl>
 			</section>
 			<section id="slide" class="home">
-				<!--
-				M4LO1 Demonstrate the use of figure boxes
-					Figure boxes around the images in the slides
-				-->
 				<figure>
 					<img src="dis_pic1.jpg" alt="castle" usemap="#disney" />
 					<figcaption>Sleeping Beauty Castle at Disneyland</figcaption>
+					
+					<!--
+					M8LO7 Demonstrate the use of the <audio> element for embedding audio in a Web page 
+						Added MP3s to the pictures in the slide section.
+					-->
+					<audio src="disneyland_dedication.mp3" type="audio/mp3" controls> </audio>
 				</figure>
 				<figure>
 					<img src="dis_pic2.jpg" alt="starwars"/>
 					<figcaption>Millenium Falcon in Galaxy's Edge at Disneyland</figcaption>
+					<audio src="starwars_title.mp3" type="audio/mp3" controls> </audio>
 				</figure>
-				<!--
-				M4LO7 Demonstrate the use of image maps, including determining x and y values 
-					Links to other pages in the picture. I determined the position in photoshop.
-				-->
 				<map name="disney">
 					<area shape="circle" coords="57,25,10" href="about.html" alt="about" />
 					<area shape="rect" coords="200,50,290,150" href="disneyland.html" alt="disneyland" />
 				</map>
 			</section>
 			<section id="form" class="home">
-				<!-- Not supported yet due to course restrictions. Will be implemented later -->
+				<h1>Contact List</h1>
+				<form id="Contact" action="http://fayanaro.github.io/BrazealTravel/contact" method="post">
+					
+					<!--
+					M7LO5 Demonstrate the use of a text box in a form
+						Text Box
+					-->
+					<label for="nameBox">First and Last Name*</label>
+					<input name="name" id="nameBox" type="text" required />
+					<label for="addBox">Address*</label>
+					<input name="address" id="addBox" type="text" required />
+					<label for="mailBox">E-mail*</label>
+					<input name="email" id="mailBox" type="email" required />
+					<label for="phoneBox">Phone Number*</label>
+					<input name="phoneNumber" id="phoneBox" type="tel" required placeholder="(nnn)nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+					<label for="calBox">Desired Trip Date</label>
+					<input name="calendar" id="calBox" type="date" />
+					<!--
+					M7LO8 Demonstrate the use of a selection list in a form
+						Selection list dropdown
+					-->
+					<label for="infoList">Wanting to know about</label>
+					<select id="infoList" name="infoMore">
+						<option value="disneyland">Disneyland Resort</option>
+						<option value="disneyWorld">Disney World Resort</option>
+						<option value="disneyCruise">Disney Cruise Line</option>
+						<option value="events">Events</option>
+						<option value="other">Other</option>
+					</select>
+				<p>Required Item (*)</p>
+				
+				<!--
+				M7LO10 Demonstrate the use of a submit button in a form
+					Submit button
+				-->
+				<p><input type="submit" value="Submit"></p>
+				</form>
 			</section>
 			<section id="deals" class="home">
 				<h1 style="color: blue;">Current Deals</h1>
